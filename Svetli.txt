@@ -1,12 +1,8 @@
 hello
-<<<<<<< HEAD
-second update GGMU
-=======
-123
-=======
+
 wassup
 i'm good thank you :)
 its not good to speak to yourself ....
 I'm a lonely soul, brother ;( 
->>>>>>> origin/master
->>>>>>> origin/master
+xxaxaxaxax
+
