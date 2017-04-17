@@ -1,5 +1,9 @@
 hello
+<<<<<<< HEAD
+second update GGMU
+=======
 im here 
 wassup
 i'm good thank you :)
 its not good to speak to yourself .... 
+>>>>>>> origin/master
