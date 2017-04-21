@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Fantasy World A Games Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Word of magic</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,22 +34,6 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 	
 <body>
 <!-- header -->
-	<div class="header">
-		<div class="w3layouts_header_left">
-				<div class="top-nav-text">
-						<p>Call Us : <span class="call">+00 111 2222 333</span></p>
-						<p>Email Us : <span class="mail"><a href="mailto:info@example.com">info@example.com</a></span></p>
-					</div>
-		</div>
-		<div class="w3layouts_header_right">
-			     <form action="#" method="post">
-						<input name="Search heare" type="search" placeholder="Search" required="">
-					
-						<input type="submit" value="">
-					</form>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
 	<div class="w3_navigation">
 		<div class="container">
 			<nav class="navbar navbar-default">

@@ -345,57 +345,6 @@ include_once('header.php');
 	</div>
 	</div>
 	<!-- //projects -->
-<!-- mail -->
-	<div class="mail" id="mail">
-		<div class="container">
-			<h3 class="w3l_head w3l_head1">Contact Us</h3>
-			<p class="w3ls_head_para w3ls_head_para1">send us a message</p>
-			<div class="w3_mail_grids">
-				<form action="#" method="post">
-					<div class="col-md-6 w3_agile_mail_grid">
-						<span class="input input--ichiro">
-							<input class="input__field input__field--ichiro" type="text" id="input-25" placeholder=" " required="">
-							<label class="input__label input__label--ichiro" for="input-25">
-								<span class="input__label-content input__label-content--ichiro">Your Name</span>
-							</label>
-						</span>
-						<span class="input input--ichiro">
-							<input class="input__field input__field--ichiro" type="email" id="input-26" placeholder=" " required="">
-							<label class="input__label input__label--ichiro" for="input-26">
-								<span class="input__label-content input__label-content--ichiro">Your Email</span>
-							</label>
-						</span>
-						<span class="input input--ichiro">
-							<input class="input__field input__field--ichiro" type="text" id="input-27" placeholder=" " required="">
-							<label class="input__label input__label--ichiro" for="input-27">
-								<span class="input__label-content input__label-content--ichiro">Your Phone Number</span>
-							</label>
-						</span>
-						
-					</div>
-					<div class="col-md-6 w3_agile_mail_grid">
-						<textarea name="Message" placeholder="Your Message" required=""></textarea>
-						<input type="submit" value="Submit">
-					</div>
-					<div class="clearfix"> </div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-<!-- //mail -->
-<div class="map">
-	<div class="container">
-		<h3 class="w3l_head w3l_head1">Locate Us</h3>
-		<p class="w3ls_head_para w3ls_head_para1">How to find us</p>
-	</div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57537.641430789925!2d-74.03215321337959!3d40.719122105634035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1456152197129" allowfullscreen=""></iframe>
-
-</div>
-
 <?php
 include_once('footer.php')
-
-
-
 ?>
