@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -138,7 +133,6 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
      font-size: 1em;
     color: #212121;
     text-decoration: none;
-    border: 3px solid #ff5000;
     padding: 0.1em .4em;
     font-weight: 700;
     text-transform: uppercase;
@@ -2008,5 +2002,24 @@ color:#5bb2fc;
 .footer a:hover{
 color:yellow;
 }
+.header {
+    background: #1d1d1d;
+    padding: 10px;
+    color: #fff;
+}
 
+.header img{
+  vertical-align: top;
+  display: inline-block;
+  height: 40px;
+}
+.header h3{
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 15px;
+  line-height: 40px;
+}
+.w3_navigation_pos h1 a img {
+  margin-top: -14px;
+}
 /*end of custom footer*/
