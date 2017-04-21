@@ -133,118 +133,6 @@ include_once('header.php');
 	</div>
 </div>
 <!-- //services -->
-
-<!-- gallery -->
-	<div class="team-bottom" id="work">
-		<div class="container">
-			<h3 class="w3l_head w3l_head1">Latest Gallery</h3>
-			<p class="w3ls_head_para w3ls_head_para1"></p>
-			<div class="w3layouts_gallery_grids">
-				<ul class="w3l_gallery_grid" id="lightGallery">
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/ab.jpg" data-responsive-src="images/8.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/ab.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-									
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g1.jpg" data-responsive-src="images/9.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g1.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-									
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g2.jpg" data-responsive-src="images/10.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g2.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-									
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g3.jpg" data-responsive-src="images/11.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g3.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-									
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g4.jpg" data-responsive-src="images/12.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g4.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-									
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g5.jpg" data-responsive-src="images/13.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g5.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-									
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g8.jpg" data-responsive-src="images/14.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g8.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-								
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g6.jpg" data-responsive-src="images/15.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g6.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-									
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g7.jpg" data-responsive-src="images/16.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/g7.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Fantasy World</h4>
-								
-								</div>
-							</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- //gallery -->
 <!-- projects -->
 	<div class="projects" id="projects">
 		<div class="container">
@@ -259,82 +147,62 @@ include_once('header.php');
 			<div id="owl-demo" class="owl-carousel owl-theme">
 					<div class="item">
 						<div class="projects-agile-grid-info">
-							<img src="images/s1.jpg" alt="" />
+							<img src="img/class-knight.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 								
-							<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
+							<h4>Knight</h4>
+							<p>from the past</p>
 							</div>
 						</div>	
 					</div>
 					<div class="item">
 						<div class="projects-agile-grid-info">
-							<img src="images/s2.jpg" alt="" />
+							<img src="img/class-programmer.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 								
-									<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
+									<h4>Programmer</h4>
+									<p>from the future</p>
 							</div>
 						</div>	
 					</div>
 					<div class="item">
 						<div class="projects-agile-grid-info">
-							<img src="images/s3.jpg" alt="" />
+							<img src="img/class-orc.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 								
-								<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
+								<h4>Orc</h4>
+								<p>from nowhere</p>
 							</div>
 						</div>	
 					</div>
 					<div class="item">
 						<div class="projects-agile-grid-info">
-							<img src="images/s4.jpg" alt="" />
+							<img src="img/class-goblin.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 							
-								<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
+								<h4>Goblin</h4>
+								<p>form the center of the earth</p>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="projects-agile-grid-info">
-							<img src="images/s5.jpg" alt="" />
+							<img src="img/class-fire.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 							
-									<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
+									<h4>Fire mage</h4>
+								<p>The master of fire</p>
 							</div>
 						</div>	
 					</div>
 					<div class="item">
 						<div class="projects-agile-grid-info">
-							<img src="images/s6.jpg" alt="" />
+							<img src="img/class-frost.jpg" alt="" />
 							<div class="projects-grid-caption"> 
-								
-									<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
+									<h4>Frost mage</h4>
+								<p>The master of frost</p>
 							</div>
 						</div>	
-					</div>
-					<div class="item">
-						<div class="projects-agile-grid-info">
-							<img src="images/s7.jpg" alt="" />
-							<div class="projects-grid-caption"> 
-								
-								<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
-							</div>
-						</div>	
-					</div>
-					<div class="item">
-						<div class="projects-agile-grid-info">
-							<img src="images/s1.jpg" alt="" />
-							<div class="projects-grid-caption">
-									<h4>Fantasy World</h4>
-								<p>Lorem ipsum</p>
-							</div>
-						</div>
 					</div>
 			</div>
 		</div>
