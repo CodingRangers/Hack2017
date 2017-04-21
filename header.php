@@ -1,10 +1,4 @@
 
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,11 +23,18 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 <link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Jura:300,400,500,600" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" type="text/css" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 </head>
 	
 <body>
 <!-- header -->
+	<div class="header">
+		<img src="symbol/symbol1_white.png" alt="Coding Ranger"><h3>CODING RANGERS</h3>
+	</div>
 	<div class="w3_navigation">
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -45,7 +46,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 						<span class="icon-bar"></span>
 					</button>
 					<div class="w3_navigation_pos">
-						<h1><a href="index.html"><span>Fantasy</span> World</a></h1>
+						<h1><a href="index.html"><img src="img/header_logo.jpg" alt="World of Magic" height="70"></a></h1>
 					</div>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,11 +55,11 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="index.html"><span data-hover="Home">Home</span></a></li>
 
-							<li><a href="#about" class="scroll"><span data-hover="About">About</span></a></li>
-							<li><a href="#services" class="scroll"><span data-hover="Services">Services</span></a></li>
-							<li><a href="#work" class="scroll"><span data-hover="Gallery">Gallery</span></a></li>
-							<li><a href="#projects" class="scroll"><span data-hover="News">News</span></a></li>
-							<li><a href="#mail" class="scroll"><span data-hover="Contact">Contact</span></a></li>
+							<li><a href="Login.php"><span data-hover="Login">Login</span></a></li>
+							<li><a href="Register.php" style="z-index: 999;"><span data-hover="Register">Register</span></a></li>
+							<li><a href="Standings.php"><span data-hover="Standings">Standings</span></a></li>
+							<li><a href="Arena.php" ><span data-hover="Arena">Arena</span></a></li>
+							<li><a href="Profile.php"><span data-hover="Profile">Profile</span></a></li>
 						</ul>
 					</nav>
 				</div>

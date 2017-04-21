@@ -15,9 +15,9 @@ include_once('header.php');
 						</div>
 						<div class="slider-info">
 							
-							<h4>Dragon Fin Soup Ridding </h4>
-							  <p>World building is component of fantasy </p>
-							<a href="#about" class="hvr-shutter-in-horizontal scroll">Read More</a>
+							<h4>Human</h4>
+							  <p>The power of mind</p>
+							<a href="#projects" class="hvr-shutter-in-horizontal scroll">Read More</a>
 						</div>
 					</li>
 					<li>
@@ -26,9 +26,9 @@ include_once('header.php');
 						</div>
 						<div class="slider-info">
 						 
-							<h4>Girl Dragon fantasy sword wing</h4>
-							   <p>World building is component of fantasy </p>
-					<a href="#about" class="hvr-shutter-in-horizontal scroll">Read More</a>
+							<h4>Creatures</h4>
+							   <p>The big boys</p>
+					<a href="#projects" class="hvr-shutter-in-horizontal scroll">Read More</a>
 						</div>
 					</li>
 					<li>
@@ -37,9 +37,9 @@ include_once('header.php');
 						</div>
 						<div class="slider-info">
 							
-							<h4>Danger bear guy pistol moment</h4>
-						   <p>World building is component of fantasy </p>
-						<a href="#about" class="hvr-shutter-in-horizontal scroll">Read More</a>
+							<h4>Mage</h4>
+						   <p>Powerful and unstoppable</p>
+						<a href="#projects" class="hvr-shutter-in-horizontal scroll">Read More</a>
 						</div>
 					</li>
 
@@ -70,7 +70,7 @@ include_once('header.php');
 						<!-- //Modal1 -->
 
 <!-- about -->
-	<div class="about" id="about">
+	<div class="about">
 		<div class="container">
 			<div class="col-md-4 agileits_about_left">
 				<h3 class="w3l_head">About Us</h3>
@@ -101,37 +101,33 @@ include_once('header.php');
 <!-- //about-bottom -->
 <!-- services -->
 <div class="services" id="services">
-		 <h3 class="w3l_head w3l_head1">Services</h3>
-			         <p class="w3ls_head_para w3ls_head_para1">View Our Services</p>
+		 <h3 class="w3l_head w3l_head1">How to do</h3>
+			         <p class="w3ls_head_para w3ls_head_para1">Read slowly</p>
 		<div class="services-agile-w3l">
 		<div class="col-md-3 services-gd text-center">
 			<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-				<a href="#" class="hi-icon"><img src="images/s1.png" alt=" " /></a>
+				<a href="Register.php" class="hi-icon"><img src="images/s1.png" alt=" " /></a>
 			</div>
-			<h4>Service 1</h4>
-			<p>Lorem Ipsum</p>
+			<h4>Register</h4>
 		</div>
 
        <div class="col-md-3 services-gd text-center">
 			<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-				<a href="#" class="hi-icon"><img src="images/s2.png" alt=" " /></a>
+				<a href="Login.php" class="hi-icon"><img src="images/s2.png" alt=" " /></a>
 			</div>
-			<h4>Service 2</h4>
-			<p>Lorem Ipsum</p>
+			<h4>Login</h4>
 		</div>
 		<div class="col-md-3 services-gd text-center">
 			<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
 				<a href="#" class="hi-icon"><img src="images/s3.png" alt=" " /></a>
 			</div>
-			<h4>Service 3</h4>
-			<p>Lorem Ipsum</p>
+			<h4>Create character</h4>
 		</div>
 		<div class="col-md-3 services-gd text-center">
 			<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-				<a href="#" class="hi-icon"><img src="images/s4.png" alt=" " /></a>
+				<a href="Arena.php" class="hi-icon"><img src="images/s4.png" alt=" " /></a>
 			</div>
-			<h4>Service 4</h4>
-			<p>Lorem Ipsum</p>
+			<h4>Play and fight</h4>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -142,7 +138,7 @@ include_once('header.php');
 	<div class="team-bottom" id="work">
 		<div class="container">
 			<h3 class="w3l_head w3l_head1">Latest Gallery</h3>
-			<p class="w3ls_head_para w3ls_head_para1">Lorem Ipsum Dolor</p>
+			<p class="w3ls_head_para w3ls_head_para1"></p>
 			<div class="w3layouts_gallery_grids">
 				<ul class="w3l_gallery_grid" id="lightGallery">
 					<li data-title="Games" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/ab.jpg" data-responsive-src="images/8.jpg"> 
@@ -253,8 +249,8 @@ include_once('header.php');
 	<div class="projects" id="projects">
 		<div class="container">
 			<div class="port-head">
-					 <h3 class="w3l_head w3l_head1">Latest News</h3>
-			         <p class="w3ls_head_para w3ls_head_para1">View Our Fantasy Games</p>
+					 <h3 class="w3l_head w3l_head1">Our classes</h3>
+			         <p class="w3ls_head_para w3ls_head_para1">More...coming soon</p>
 			</div>
 		</div>
 		<div class="projects-grids">
