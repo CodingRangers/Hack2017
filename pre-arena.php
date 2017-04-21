@@ -58,7 +58,7 @@ FROM magics
 $read_result2 = mysqli_query($conn, $read_query2);
 
 	if (mysqli_num_rows($read_result2) > 0) {
-		echo "<form action='pre-arena.php' method='GET'>";
+		echo "<form action='arena.php' method='GET'>";
 		echo "Choose magic for battle : <br>";
 		$res2 = mysqli_query($conn, $read_query2);
 			
@@ -69,7 +69,7 @@ $read_result2 = mysqli_query($conn, $read_query2);
 		while($row2 = mysqli_fetch_assoc($read_result2)){
 			
 			// var_dump($row1);
-			echo "<input type='checkbox' name='chosen_magics' value='".$row2['magic_id']."'>".$row2['magic_name'];
+			echo "<input type='checkbox' name='chosen_magics[]' value='".$row2['magic_id']."'>".$row2['magic_name'];
 			echo "Magic name : ".$row2['magic_name']."/Magic type : ".$row2['type']."/ For race : ".$row2['race_name']."<br>";
 			// var_dump($row);
 }
