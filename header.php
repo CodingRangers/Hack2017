@@ -51,6 +51,11 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 		font-weight: bold;
 		color: #CDA869;
 	}
+	#form_in_login{
+		width: 40%;
+		margin-left: 30%;
+		margin-top: 50px;
+	}
 </style>
 </head>
 	
@@ -103,7 +108,14 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 							<li class="active"><a href="index.html"><span data-hover="Home">Home</span></a></li>
 
 							<li><a href="Login.php"><span data-hover="Login">Login</span></a></li>
+							<?php
+							if(!isset($_SESSION['username']))
+							{
+							?>
 							<li><a href="Register.php" style="z-index: 999;"><span data-hover="Register">Register</span></a></li>
+							<?php
+							}
+							?>
 							<li><a href="Standings.php"><span data-hover="Standings">Standings</span></a></li>
 							<li><a href="pre-arena.php" ><span data-hover="Arena.php">Arena</span></a></li>
 							<li><a href="Profile.php"><span data-hover="Profile">Profile</span></a></li>

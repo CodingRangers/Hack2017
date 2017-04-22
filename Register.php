@@ -103,21 +103,21 @@ $( document ).ready(function() {
 		  <div class="form-group">
 		    <label for="username" class="col-sm-2 control-label">Username</label>
 		    <div class="col-sm-10">
-		      <input type="text" name=username class="form-control" id="username" placeholder="Username" required>
+		      <input type="text" name=username class="form-control" id="username" placeholder="Username..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group">
 		    <label for="pass" class="col-sm-2 control-label">Password</label>
 		    <div class="col-sm-10">
-		      <input type="password" name=pass class="form-control" id="pass" placeholder="Password" required>
+		      <input type="password" name=pass class="form-control" id="pass" placeholder="Password..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group">
 		    <label for="char_name" class="col-sm-2 control-label">Character name</label>
 		    <div class="col-sm-10">
-		      <input type="text" name=char_name class="form-control" id="char_name" placeholder="Password" required>
+		      <input type="text" name=char_name class="form-control" id="char_name" placeholder="Character name..." required>
 		    </div>
 		  </div>
 			 </div>
@@ -224,7 +224,7 @@ $( document ).ready(function() {
 		<!--classes choose end-->
 	  <div class="form-group" id=register_button>
 		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="submit" name=register class="btn btn-default" id="button77">Sign in</button>
+		      <button type="submit" name=register class="btn btn-default" id="button77">Sign Up</button>
 		    </div>
 		</div>
 		<input name="class" id="tick6_r" type="radio" style="display:none" value="3">
