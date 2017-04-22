@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	include("utilities.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +33,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
   crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="css/Profile.css">
 <link rel="stylesheet" type="text/css" href="Standings.css">
+<link rel="stylesheet" type="text/css" href="questions.css">
 <?php include_once('conn.php'); ?>
 <style type="text/css">
 	#logout{
