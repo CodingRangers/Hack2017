@@ -1,0 +1,14 @@
+.profile h3 {
+	font-size: 36px;
+	text-align: center;
+	margin: 20px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+}
+.profile_box {
+	display: inline-block;
+	width: 50%;
+}
+.profile_box img {
+	width: 400px;
+}
