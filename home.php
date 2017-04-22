@@ -104,16 +104,16 @@ include_once('header.php');
 		 <h3 class="w3l_head w3l_head1">How to do</h3>
 			         <p class="w3ls_head_para w3ls_head_para1">Read slowly</p>
 		<div class="services-agile-w3l">
-		<div class="col-md-3 services-gd text-center">
 			<?php
 			if(!isset($_SESSION['username']))
 			{
 			?>
-			<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-				<a href="Register.php" class="hi-icon"><img src="images/s1.png" alt=" " /></a>
+			<div class="col-md-3 services-gd text-center">
+				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+					<a href="Register.php" class="hi-icon"><img src="images/s1.png" alt=" " /></a>
+				</div>
+				<h4>Register</h4>
 			</div>
-			<h4>Register</h4>
-		</div>
 			<?php
 			}
 			else
@@ -123,11 +123,11 @@ include_once('header.php');
 				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
 					<a href="#" class="hi-icon"><img src="images/s1.png" alt=" " /></a>
 				</div>
+					<h4>You are in! :)</h4>
 				</div>
 				<?php
 			}
 			?>
-			<h4>You are in! :)</h4>
 		</div>
 
        <div class="col-md-3 services-gd text-center">

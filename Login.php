@@ -45,11 +45,8 @@
 						if($row['user_name'] == $username && $row['user_pass'] == $pass) 
 						{
 							$_SESSION['username'] = $username;
-							$br = 1;
-						}
-						else
-						{
-						$br++;
+							$br = 0;
+							break;
 						}
 				}
 						if($br>0)
@@ -60,7 +57,8 @@
 							</div>
 						<?php
 						}
-						
+						else
+							 echo '<script>window.location.href = "Profile.php";</script>';
 		}
- 	include("footer.php");
+ 			include("footer.php");
 	?>
