@@ -1,12 +1,19 @@
 <?php
 include_once('header.php');
-
+// get user id
+$username = $_SESSION['username'];
+$qry = "SELECT user_id FROM users WHERE user_name = '$username'";
+$result = mysqli_query($conn, $qry);
+if (mysqli_num_rows($result) != 0) {
+	$row = mysqli_fetch_array($result);
+	$_SESSION['user_id'] = $row['user_id'];
+}
+// end get user id	
 ?>
 <div class="container profile">
 	<h3>Profile</h3>
 	<?php
-	// Profile Info
-	$user_id = 1;
+	$user_id = $_SESSION['user_id'];
 	$read_query = "SELECT * FROM `users`
 	JOIN characters ON users.user_id = characters.user_id
 	JOIN class on characters.class_id = class.class_id
@@ -47,7 +54,7 @@ include_once('header.php');
 
 		}
 	}
-	// End Profile Info
+
 	?>
 	<div class="profile_box my_stats">
 		<div class="my_row"><h4>Stats</h4></div>
