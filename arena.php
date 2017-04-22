@@ -2,15 +2,10 @@
 <?php
 include_once('header.php');
 session_start();
+include_once('conn.php');
 ?>
 
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'wom');
-if(!$conn){
-	die("faill".mysqli_connect_error());
-}else{
-	// echo "y";
-}
 
 $i=1;
 foreach ($_GET['chosen_magics'] as $key => $value) {

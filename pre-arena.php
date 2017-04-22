@@ -1,6 +1,7 @@
 <?php
 include_once('header.php');
 session_start();
+include_once('conn.php');
 ?>
 <script
 			  src="https://code.jquery.com/jquery-3.2.1.js"
@@ -8,12 +9,7 @@ session_start();
 			  crossorigin="anonymous"></script>
 
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'wom');
-if(!$conn){
-	die("faill".mysqli_connect_error());
-}else{
-	// echo "y";
-}
+
 
 $user_id = 1;
 if (strlen($_SESSION['error']) > 1) {

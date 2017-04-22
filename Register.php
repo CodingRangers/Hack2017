@@ -1,11 +1,7 @@
 
 	<?php
 	session_start();
-	$conn = mysqli_connect('localhost','root','','wom');
-	if($conn)
-		echo "YEEES";
-	else
-		echo "NOO";
+
 	include("header.php");
 	?>
 	<script
