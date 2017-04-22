@@ -15,7 +15,7 @@ include_once('header.php');
 						</div>
 						<div class="slider-info">
 							
-							<h4>Human</h4>
+							<h4>Humanoids</h4>
 							  <p>The power of mind</p>
 							<a href="#projects" class="hvr-shutter-in-horizontal scroll">Read More</a>
 						</div>
@@ -26,7 +26,7 @@ include_once('header.php');
 						</div>
 						<div class="slider-info">
 						 
-							<h4>Creatures</h4>
+							<h4>Halfbreeds</h4>
 							   <p>The big boys</p>
 					<a href="#projects" class="hvr-shutter-in-horizontal scroll">Read More</a>
 						</div>
@@ -37,7 +37,7 @@ include_once('header.php');
 						</div>
 						<div class="slider-info">
 							
-							<h4>Mage</h4>
+							<h4>Spiritlords</h4>
 						   <p>Powerful and unstoppable</p>
 						<a href="#projects" class="hvr-shutter-in-horizontal scroll">Read More</a>
 						</div>
@@ -174,7 +174,7 @@ include_once('header.php');
 							<img src="img/class-programmer.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 								
-									<h4>Programmer</h4>
+									<h4>Cybertron</h4>
 									<p>from the future</p>
 							</div>
 						</div>	
@@ -184,7 +184,7 @@ include_once('header.php');
 							<img src="img/class-orc.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 								
-								<h4>Orc</h4>
+								<h4>Brut</h4>
 								<p>from nowhere</p>
 							</div>
 						</div>	
@@ -194,7 +194,7 @@ include_once('header.php');
 							<img src="img/class-goblin.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 							
-								<h4>Goblin</h4>
+								<h4>Trickster</h4>
 								<p>form the center of the earth</p>
 							</div>
 						</div>
@@ -204,7 +204,7 @@ include_once('header.php');
 							<img src="img/class-fire.jpg" alt="" />
 							<div class="projects-grid-caption"> 
 							
-									<h4>Fire mage</h4>
+									<h4>Pyromancer</h4>
 								<p>The master of fire</p>
 							</div>
 						</div>	
@@ -213,7 +213,7 @@ include_once('header.php');
 						<div class="projects-agile-grid-info">
 							<img src="img/class-frost.jpg" alt="" />
 							<div class="projects-grid-caption"> 
-									<h4>Frost mage</h4>
+									<h4>Icebringer</h4>
 								<p>The master of frost</p>
 							</div>
 						</div>	
