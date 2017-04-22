@@ -58,9 +58,9 @@ if (mysqli_num_rows($result) != 0) {
 	?>
 	<div class="profile_box my_stats">
 		<div class="my_row"><h4>Stats</h4></div>
-		<div class="my_row"><strong>Games Played: </strong>value</div>
-		<div class="my_row"><strong>Games Won: </strong>value</div>
-		<div class="my_row"><strong>Games Cost: </strong>value</div>
+		<div class="my_row"><span>Games Played: </span>value</div>
+		<div class="my_row"><span>Games Won: </span>value</div>
+		<div class="my_row"><span>Games Cost: </span>value</div>
 
 	</div>
 </div>
