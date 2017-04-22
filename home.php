@@ -53,38 +53,33 @@ include_once('header.php');
 	</div>
 <!-- //banner -->
 <!-- Modal1 -->
-						<div class="modal fade" id="myModal1" role="dialog">
+						<!--<div class="modal fade" id="myModal1" role="dialog">
 							<div class="modal-dialog">
-							<!-- Modal content-->
+							Modal content
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
 										<h4>Contracts</h4>
 										<img src="images/ab.jpg" alt=" " class="img-responsive">
-										<h5>Donec lobortis pharetra dolor</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+										<h5>World of magic</h5>
+										<p>World of magic is a new fun fantasy game and it is expected to make big debut at the market soon! Sounds crazy?</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<!-- //Modal1 -->
+						</div>-
+						//Modal1 -->
 
 <!-- about -->
 	<div class="about">
 		<div class="container">
 			<div class="col-md-4 agileits_about_left">
-				<h3 class="w3l_head">About Us</h3>
-				<p class="w3ls_head_para">who we are</p>
+				<h3 class="w3l_head">About</h3>
+				<p class="w3ls_head_para">THE GAME:</p>
 			</div>
 			<div class="agileits_banner_bottom_grids">
 				<div class="col-md-6 agileits_banner_bottom_grid_l">
-					<h4>Aliquam a nunc non erat lobortis</h4>
-					<p><i>Vestibulum nec consequat nisl. Aliquam vehicula egestas commodo. 
-						Pellentesque lorem magna, pulvinar sed lacinia et, venenatis in mi.</i>Nullam sodales rutrum nisl, gravida porttitor lectus porta et. 
-						Duis purus arcu, semper at magna faucibus, elementum maximus ligula. 
-						Etiam imperdiet posuere odio gravida vehicula. Nulla consectetur massa 
-						eget tincidunt suscipit. Integer vitae ex eros. Cras ornare dignissim 
-						scelerisque.</p>
+					<h4>WORLD OF MAGIC</h4>
+					<p><i>World of magic is a new fun fantasy game and it is expected to make big debut at the market soon! Sounds crazy?</i>Customize your own comic book hero and conquer the top slot of the Hall of Fame! It’s not an easy task! Accept quests, complete exciting adventures, level up, collect gold, obtain honor, be "overpowered" and become a living legend!</p>
 				</div>
 				<div class="col-md-6 agileits_banner_bottom_grid_r">
 					<div class="agileits_banner_btm_grid_r">

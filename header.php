@@ -31,6 +31,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="css/Profile.css">
+<link rel="stylesheet" type="text/css" href="Standings.css">
 <?php include_once('conn.php'); ?>
 <style type="text/css">
 	#logout{
@@ -82,6 +83,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 			if(isset($_POST['logout']))
 			{
 				unset($_SESSION['username']);
+				session_destroy();
 				header("location:home.php");
 			}
 		}
@@ -116,9 +118,17 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 							<?php
 							}
 							?>
-							<li><a href="Standings.php"><span data-hover="Standings">Standings</span></a></li>
-							<li><a href="pre-arena.php" ><span data-hover="Arena.php">Arena</span></a></li>
+							<li><a href="Standings_wins.php"><span data-hover="Standings">Standings</span></a></li>
+							<?php 
+							if(isset($_SESSION['username'])){
+								echo '
+									<li><a href="pre-arena.php" ><span data-hover="Arena.php">Arena</span></a></li>
 							<li><a href="Profile.php"><span data-hover="Profile">Profile</span></a></li>
+								';
+
+							}
+
+							 ?>
 						</ul>
 					</nav>
 				</div>
