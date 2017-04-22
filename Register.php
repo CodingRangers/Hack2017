@@ -1,7 +1,5 @@
 
 	<?php
-	session_start();
-
 	include("header.php");
 	?>
 	<script
@@ -105,32 +103,25 @@ $( document ).ready(function() {
 		  <div class="form-group">
 		    <label for="username" class="col-sm-2 control-label">Username</label>
 		    <div class="col-sm-10">
-		      <input type="text" name=username class="form-control" id="username" placeholder="Username">
+		      <input type="text" name=username class="form-control" id="username" placeholder="Username..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group">
 		    <label for="pass" class="col-sm-2 control-label">Password</label>
 		    <div class="col-sm-10">
-		      <input type="password" name=pass class="form-control" id="pass" placeholder="Password">
+		      <input type="password" name=pass class="form-control" id="pass" placeholder="Password..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group">
 		    <label for="char_name" class="col-sm-2 control-label">Character name</label>
 		    <div class="col-sm-10">
-		      <input type="text" name=char_name class="form-control" id="char_name" placeholder="Password">
+		      <input type="text" name=char_name class="form-control" id="char_name" placeholder="Character name..." required>
 		    </div>
 		  </div>
-			  <div class="form-group">
-			    <div class="col-sm-offset-2 col-sm-10">
-			      <div class="checkbox">
-			        <label>
-			          <input type="checkbox"> Remember me
-			        </label>
-			      </div>
-			    </div>
-			  </div>
+			 </div>
+			 
 		</div>
 		  <!--classes choose start-->
 		  <div class="projects" id="register_class">
@@ -233,7 +224,7 @@ $( document ).ready(function() {
 		<!--classes choose end-->
 	  <div class="form-group" id=register_button>
 		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="submit" name=register class="btn btn-default" id="button77">Sign in</button>
+		      <button type="submit" name=register class="btn btn-default" id="button77">Sign Up</button>
 		    </div>
 		</div>
 		<input name="class" id="tick6_r" type="radio" style="display:none" value="3">
@@ -243,32 +234,108 @@ $( document ).ready(function() {
 		<input name="class" id="tick2_r" type="radio" style="display:none" value="5">
 		<input name="class" id="tick1_r" type="radio" style="display:none" value="1">
 	</form>
+	 <div style="position: absolute; right: 20%; top: 20%;">
+			  <?php
+		if(isset($_POST['register']))
+		{
+			if(empty($_POST['class']))
+			{
+						?>
+				<div class="alert alert-danger">
+  					<strong>You need to choose class!</strong>
+				</div>
+					<?php
+			}
+			else
+			{
+				$br=0;
+				$br2 = 0;
+				$class = $_POST['class'];
+				if($class==(1||2))
+					$race = 1;
+				elseif($class==(3||4))
+					$race = 2;
+				elseif($class==(5||6))
+					$race =  3;
+							$q = "SELECT * FROM `users`";		
+							$res = mysqli_query($conn,$q);
+							if(mysqli_num_rows($res) > 0 )
+							{
+								while ($row = mysqli_fetch_assoc($res)) 
+								{
+										if($row['user_name'] == $_POST['username']) 
+										{
+											echo "<h4>There is a user with this username:" . $row['user_name'];
+											break;
+										}
+										else
+											$br = 1;
+								}	
+							}
+							else 
+								$br = 1;
+							$q = "SELECT `char_name` FROM `characters`";		
+							$res = mysqli_query($conn,$q);
+							if(mysqli_num_rows($res) > 0 )
+							{
+								while ($row = mysqli_fetch_assoc($res)) 
+								{
+										if($row['char_name'] == $_POST['char_name']) 
+										{
+											echo "<h4>There is a user with this character:" . $row['char_name'];
+											break;
+										}
+										else
+											$br2 = 1;
+								}	
+							}
+							else
+								$br2 = 1;
+							if($br==1 && $br2==1)
+								{
+										$user_id = 0;
+										$race = 0;
+										$xp = 100;
+										$lv = 1;
+										$pass = $_POST['pass'];
+										$username = $_POST['username'];
+										$char_name = $_POST['char_name'];
+										$q = "INSERT INTO `users`(`user_name`,`user_pass`) VALUES ('$username','$pass')";
+										mysqli_query($conn,$q);
+										$q = "SELECT * FROM `users` WHERE `user_name` = '$username'";
+										$res = mysqli_query($conn,$q);
+										while ($row = mysqli_fetch_assoc($res)) 
+										{
+											$user_id = $row['user_id'];
+										}
+										$q = "INSERT INTO `characters`(`user_id`, `char_name`, `class_id`, `char_xp`, `char_lv`) VALUES ($user_id,'$char_name',$class,$xp,$lv)";
+										mysqli_query($conn,$q);
+										$success = 1;
+
+								}
+								if($success=1)
+								{
+									?>
+										<div class="alert alert-success">
+		  									<strong>Success!</strong>
+										</div>
+									<?php
+									$_SESSION['username'] = $username;
+								}
+							/*echo " <br> race = $race <br>";
+							echo "class = $class <br>";
+							echo "xp = $xp <br>";
+							echo "level = $lv <br>";
+							echo "username = $username <br>";
+							echo "pass = $pass <br>";
+							echo "char_name = $char_name <br>";*/
+
+				}
+			}
+		?>
+		</div>
 	<?php
-	if(isset($_POST['register']))
-	{
-		$race = 0;
-		$class = $_POST['class'];
-		$xp = 100;
-		$lv = 1;
-		$pass = $_POST['pass'];
-		$username = $_POST['username'];
-		if($class==(1||2))
-			$race = 1;
-		elseif($class==(3||4))
-			$race = 2;
-		elseif($class==(5||6))
-			$race =  3;
 
-
-		echo " <br> race = $race <br>";
-		echo "class = $class <br>";
-		echo "xp = $xp <br>";
-		echo "level = $lv <br>";
-		echo "username = $username <br>";
-		echo "pass = $pass <br>";
-
-
-	}
  	include("footer.php");
 	?>
 

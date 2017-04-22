@@ -1,4 +1,6 @@
-
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,12 +32,60 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
   crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="css/Profile.css">
 <?php include_once('conn.php'); ?>
+<style type="text/css">
+	#logout{
+		border: none;
+	    background-color: inherit;
+	    font-size: 1.5em;
+	    color: #FFF;
+	    font-family: "Jura",sans-serif;
+	}
+	#logout:hover{
+		 background-color: #FFF;
+		 border-radius: 4px;
+		 color: #000;
+	  	 transition: 0.8s ease;
+
+	}
+	#username_header{
+		font-weight: bold;
+		color: #CDA869;
+	}
+	#form_in_login{
+		width: 40%;
+		margin-left: 30%;
+		margin-top: 50px;
+	}
+</style>
 </head>
 	
 <body>
 <!-- header -->
+
 	<div class="header">
 		<img src="symbol/symbol1_white.png" alt="Coding Ranger"><h3>CODING RANGERS</h3>
+		<?php
+		if(isset($_SESSION['username']))
+		{
+			?>
+				<div style="position: absolute; right: 15%; top: 1.5%; margin-right: 50px; z-index: 10000; color: #FFF;">
+					<h3>Hello, <span id=username_header><?php echo $_SESSION['username']?></span></h3>
+				</div>
+			<?php
+			?>
+				<div style="position: absolute; right: 5%; top: 1.5%; margin-right: 25px; z-index: 100;">
+					<form method="post" style="z-index: 200;">
+						<input type="submit" name="logout" value="LOG OUT" id=logout>
+					</form>
+				</div>
+			<?php
+			if(isset($_POST['logout']))
+			{
+				unset($_SESSION['username']);
+				header("location:home.php");
+			}
+		}
+		?>
 	</div>
 	<div class="w3_navigation">
 		<div class="container">
@@ -58,9 +108,16 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 							<li class="active"><a href="index.html"><span data-hover="Home">Home</span></a></li>
 
 							<li><a href="Login.php"><span data-hover="Login">Login</span></a></li>
+							<?php
+							if(!isset($_SESSION['username']))
+							{
+							?>
 							<li><a href="Register.php" style="z-index: 999;"><span data-hover="Register">Register</span></a></li>
+							<?php
+							}
+							?>
 							<li><a href="Standings.php"><span data-hover="Standings">Standings</span></a></li>
-							<li><a href="Arena.php" ><span data-hover="Arena">Arena</span></a></li>
+							<li><a href="pre-arena.php" ><span data-hover="Arena.php">Arena</span></a></li>
 							<li><a href="Profile.php"><span data-hover="Profile">Profile</span></a></li>
 						</ul>
 					</nav>
