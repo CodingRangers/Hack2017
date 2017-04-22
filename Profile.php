@@ -4,19 +4,57 @@ include_once('header.php');
 ?>
 <div class="container profile">
 	<h3>Profile</h3>
-	<div class="profile_box avatar">
-		<img src="img/class-fire.jpg" alt="class">
-	</div>
-	<div class="profile_box my_info">
-		<div class="my_row"><strong>name: </strong>char name</div>
-		<div class="my_row"><strong>lvl: </strong>1</div>
-		<div class="my_row"><strong>race: </strong>fire Mage</div>
-		<div class="my_row"><strong>class: </strong>mage</div>
-		<div class="my_row"><h4>Acquired skills</h4></div>
-		<div class="my_row"><img src="img/magics/fire_purgin_fire.png" alt="name"><span>purgin fire</span></div>
-		<div class="my_row"><img src="img/magics/fire_blast_shield.png" alt="name"><span>blast shield</span></div>
-		<div class="my_row"><img src="img/magics/fire_ball.png" alt="name"><span>fire ball</span></div>
-		<div class="my_row"><img src="img/magics/fire_vortex.png" alt="name"><span>fire vortex</span></div>
+	<?php
+	// Profile Info
+	$user_id = 1;
+	$read_query = "SELECT * FROM `users`
+	JOIN characters ON users.user_id = characters.user_id
+	JOIN class on characters.class_id = class.class_id
+	JOIN race ON class.race_id = race.race_id
+	WHERE users.user_id = $user_id ";
+	$read_result = mysqli_query($conn, $read_query);
+	if (mysqli_num_rows($read_result) != 0) {
+		while ($row = mysqli_fetch_assoc($read_result)) {
+			echo '
+			<div class="profile_box avatar">
+				<img src="' . $row['class_avatar'] . '" alt="' . $row['class_name'] . '">
+			</div>
+			<div class="profile_box my_info">
+
+				<div class="my_row"><strong>name: </strong>' . $row['char_name'] . '</div>
+				<div class="my_row"><strong>lvl: </strong>' . $row['char_lv'] . '</div>
+				<div class="my_row"><strong>race: </strong>' . $row['race_name'] . '</div>
+				<div class="my_row"><strong>class: </strong>' . $row['class_name'] . '</div>
+				<div class="my_row"><h4>Acquired skills</h4></div>
+				';
+
+				//Show MAGICS
+				$read_query1 = "SELECT * FROM `magics` 
+				JOIN class ON magics.class_id = class.class_id
+				WHERE class.class_id = $row[class_id]";
+				$read_result1 = mysqli_query($conn, $read_query1);
+				if (mysqli_num_rows($read_result1) != 0) {
+					while ($row1 = mysqli_fetch_assoc($read_result1)) {
+						echo '
+						<div class="my_row"><img src="' . $row1['magic_avatar'] . '" alt="' . $row1['magic_name'] . '"><span>' . $row1['magic_name'] . '</span></div>
+					';
+
+				}
+				
+			}
+			// End MAGICS
+			echo "</div>";
+
+		}
+	}
+	// End Profile Info
+	?>
+	<div class="profile_box my_stats">
+		<div class="my_row"><h4>Stats</h4></div>
+		<div class="my_row"><strong>Games Played: </strong>value</div>
+		<div class="my_row"><strong>Games Won: </strong>value</div>
+		<div class="my_row"><strong>Games Cost: </strong>value</div>
+
 	</div>
 </div>
 

@@ -22,11 +22,14 @@
 	max-width: 350px;
 }
 .my_info {
-	min-width: 50%;
+
 }
 .my_info img {
-	width: 50px;
+	height: 50px;
 	margin: 3px 6px 3px 0;
+}
+.my_stats {
+	max-width: 350px;
 }
 .avatar img {
 	padding: 3px;
