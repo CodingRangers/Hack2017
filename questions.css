@@ -1,0 +1,16 @@
+#question_avatar{
+	margin-top: 4%;
+	margin-left: 90px;
+	margin-bottom: 7%;
+}
+#wrapper_qu{
+	position: absolute;
+	right: 35%;
+	top: 30%;
+}
+.answer{
+	margin-bottom: 50px;
+	font-size: 1.5em;
+	font-style: italic;
+	font-family: "Juda",sans-serif;
+}
