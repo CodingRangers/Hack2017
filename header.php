@@ -28,7 +28,8 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-
+<link rel="stylesheet" type="text/css" href="css/Profile.css">
+<?php include_once('conn.php'); ?>
 </head>
 	
 <body>
