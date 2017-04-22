@@ -321,6 +321,7 @@ $( document ).ready(function() {
 										</div>
 									<?php
 									$_SESSION['username'] = $username;
+									 echo '<script>window.location.href = "Home.php";</script>';
 								}
 							/*echo " <br> race = $race <br>";
 							echo "class = $class <br>";
