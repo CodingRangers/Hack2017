@@ -59,6 +59,20 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 		margin-left: 30%;
 		margin-top: 50px;
 	}
+	#answer{
+		border: none;
+	    background-color: inherit;
+	    font-size: 1.5em;
+	    color: #000;
+	    font-family: "Jura",sans-serif;
+	}
+	#answer:hover{
+		 background-color: #000;
+		 border-radius: 4px;
+		 color: #FFF;
+	  	 transition: 0.8s ease;
+
+	}
 </style>
 </head>
 	

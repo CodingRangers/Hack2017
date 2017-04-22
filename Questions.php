@@ -45,12 +45,12 @@
 			if ($_POST['answer'] ==  $_POST['correct_answer']) 
 			{
 				
-				$_SESSION['xp']+=3;
+				$_SESSION['xp']+=4;
 				?><div class="answer"><span class=big_answer>Correct answer<br>You have won 4xp:)</span></div><?php
 			}
 			else
 			{
-				$_SESSION['xp']-=150;
+				$_SESSION['xp']-=2;
 				?><div class="answer"><span class=big_answer>Wrong answer!<br>You have lost 2xp</span></div><?php
 			}
 			unset($_POST);
@@ -61,6 +61,7 @@
 		?>
 		<div class="answer">No answer :( ... You have lost 2xp!</div>
 			<?php
+			$_SESSION['xp']-=2;
 			 $_SESSION['answer_check']=3;
 		}
 		$_SESSION['answer_check']=2;
@@ -95,17 +96,14 @@
 		  <input type="radio" name="answer" value="<?php echo $qusts[$quest_rand][$quest_temp1]; ?>"> <?php echo  $qusts[$quest_rand][$quest_temp1]; ?><br>
 		  <input type="radio" name="answer" value="<?php echo $qusts[$quest_rand][$quest_temp2]; ?>"> <?php echo  $qusts[$quest_rand][$quest_temp2]; ?><br>
 		  <input type="radio" name="answer" value="<?php echo $qusts[$quest_rand][$quest_temp3]; ?>"> <?php echo  $qusts[$quest_rand][$quest_temp3]; ?><br><br>
-		  <input type="submit" name="submit" value="answer" onclick="alert('<?php echo $message;  ?> ')">
+		  <input type="submit" id=answer name="submit" value="Answer" onclick="alert('<?php echo $message;  ?> ')">
 		</div>
 		</div>
-		<?php
-	}	
+		<?php	
 			$char_xp = $_SESSION['xp'];
 			$char_lv = $_SESSION['lv'];
 			if(eligable_for_level($char_xp,$char_lv+1))
 				{$char_lv+=1;}
-			else 
-				$char_lv-=1;
 			$q = "UPDATE `characters` SET `char_xp`= $char_xp , `char_lv` = $char_lv WHERE `user_id`='$user_id'";
 			mysqli_query($conn,$q);
 			?>
@@ -116,5 +114,6 @@
 			?>
 			</div>
 			<?php
+	}
 			include("footer.php");
 		?>
