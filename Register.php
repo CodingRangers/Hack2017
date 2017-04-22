@@ -311,7 +311,8 @@ $( document ).ready(function() {
 										$q = "INSERT INTO `characters`(`user_id`, `char_name`, `class_id`, `char_xp`, `char_lv`) VALUES ($user_id,'$char_name',$class,$xp,$lv)";
 										mysqli_query($conn,$q);
 										$success = 1;
-
+										$q = "INSERT INTO `standings`(`games_won`, `games_lost`) VALUES (0,0)";
+										mysqli_query($conn,$q);
 								}
 								if($success=1)
 								{
@@ -321,6 +322,7 @@ $( document ).ready(function() {
 										</div>
 									<?php
 									$_SESSION['username'] = $username;
+									 echo '<script>window.location.href = "Home.php";</script>';
 								}
 							/*echo " <br> race = $race <br>";
 							echo "class = $class <br>";
