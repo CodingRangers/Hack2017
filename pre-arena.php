@@ -10,11 +10,11 @@
 	<div id="container">
 	<?php
 		$user_id = $_SESSION['user_id'];
-		if (strlen($_SESSION['error']) > 1) {
-			echo '<div class="alert alert-warning">
-		  <strong>'.$_SESSION['error'].'</strong>
-				</div>';
-		} 
+		// if (strlen($_SESSION['error']) > 1) {
+		// 	echo '<div class="alert alert-warning">
+		//   <strong>'.$_SESSION['error'].'</strong>
+		// 		</div>';
+		// } 
 
 	$read_query = "SELECT *
 		FROM  characters
@@ -107,14 +107,14 @@
 </form>
 <?php endif; ?>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
 $('input[type=checkbox]').on('change', function (e) {
     if ($('input[type=checkbox]:checked').length > 4) {
         $(this).prop('checked', false);
     }
 });
-</script>
+</script> -->
 	</div> <!-- END OF wrapper-->
  <!--  END OF WRAPPER  -->	
 
